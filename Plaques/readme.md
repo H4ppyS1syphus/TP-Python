@@ -55,14 +55,8 @@ This project aims to automatically generate synthetic license plate images, trai
 
 ## Running the Project
 
-### Dataset Generation and Pre-Training
-To generate the dataset and train the model initially, run:
-```bash
-python pre_train.py
-```
-
 ### Training the Model
-After pre-training, train the model further using synthetic license plates:
+Train the model further using synthetic license plates:
 ```bash
 python train.py
 ```

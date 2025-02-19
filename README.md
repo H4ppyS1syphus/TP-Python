@@ -80,11 +80,6 @@ The following images demonstrate the outcomes of the MRI and CSF mask processing
 ### License Plate Recognition
 Navigate to the corresponding folder and run the following scripts as needed:
 
-- **Dataset Generation and Pre-Training:**  
-     ```bash
-     python pre_train.py
-     ```
-
 - **Training the Model:**  
      ```bash
      python train.py
