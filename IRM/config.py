@@ -9,9 +9,9 @@ LOGS_DIR = os.path.join(BASE_DIR, 'logs')
 PLOT_DIR = os.path.join(BASE_DIR, 'plots')
 
 # File Paths
-ORIGINAL_MRI_PATH = os.path.join('mri_data', 'csf2.tif')  # Original MRI
-DENOISED_MRI_PATH = os.path.join('mri_data', 'denoised_nl_2.tif')  # Denoised MRI
-DENOISED_TIFF_PATH = os.path.join('mri_data', 'denoised_nl_2.tif')  # Path to save/load denoised TIFF
+ORIGINAL_MRI_PATH = os.path.join('data', 'csf2.tif')  # Original MRI
+DENOISED_MRI_PATH = os.path.join('data', 'csf.tif')  # Denoised MRI
+DENOISED_TIFF_PATH = os.path.join('data', 'csf.tif')  # Path to save/load denoised TIFF
 
 # Masks
 MASK_FILENAMES = [

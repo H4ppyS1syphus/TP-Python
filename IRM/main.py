@@ -66,7 +66,7 @@ def main():
     # ----- Step 1: Load and Denoise the TIFF Image -----
     original_img = load_image(ORIGINAL_MRI_PATH)
 
-    voxel_dimensions = (0.9765635, 0.9765635, 1.0)  # Example values; adjust as needed
+    voxel_dimensions = (0.9765635, 0.9765635, 1.0)
     csf_volume_mm3 = calculate_csf_volume(
         csf_mask=None,
         mri_image=original_img,

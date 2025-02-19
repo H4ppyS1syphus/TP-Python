@@ -16778,3 +16778,445 @@
 2024-11-13 10:46:23,326 - WARNING - No refined mask found for cluster 0. Skipping.
 2024-11-13 10:46:23,327 - INFO - Final cleanup completed.
 2024-11-13 10:46:23,327 - INFO - Current memory usage: 1124.97 MB
+2025-02-19 17:50:21,914 - INFO - Logging initiated.
+2025-02-19 17:50:21,915 - INFO - Pipeline started.
+2025-02-19 17:50:21,916 - INFO - Loading image from 'data/csf2.tif'.
+2025-02-19 17:50:22,328 - INFO - Image loaded with shape (144, 763, 260).
+2025-02-19 17:50:22,392 - INFO - Calculated CSF Volume: 17869553.923145205 mm³
+2025-02-19 17:50:22,729 - INFO - Denoised image loaded.
+2025-02-19 17:50:22,730 - INFO - Current memory usage: 559.57 MB
+2025-02-19 17:50:22,912 - INFO - Starting intensity normalization.
+2025-02-19 17:50:23,895 - INFO - Intensity normalization complete.
+2025-02-19 17:50:23,895 - INFO - Current memory usage: 700.05 MB
+2025-02-19 17:50:23,910 - INFO - Using top third of the MRI data: new shape (160, 263, 260)
+2025-02-19 17:50:23,910 - INFO - Computing neighborhood statistics.
+2025-02-19 17:50:24,472 - INFO - Neighborhood statistics computed.
+2025-02-19 17:50:24,472 - INFO - Current memory usage: 658.39 MB
+2025-02-19 17:50:24,473 - INFO - Computing z-axis value for each voxel.
+2025-02-19 17:50:24,545 - INFO - Z-axis value for each voxel computed.
+2025-02-19 17:50:24,546 - INFO - Current memory usage: 700.02 MB
+2025-02-19 17:50:24,546 - INFO - Preparing features for K-Means clustering with spatial connectivity.
+2025-02-19 17:50:25,425 - INFO - Features shape: (10940800, 4)
+2025-02-19 17:50:25,426 - INFO - Current memory usage: 949.81 MB
+2025-02-19 17:50:25,426 - INFO - Plotting feature distributions.
+2025-02-19 17:50:33,785 - INFO - Feature distributions plotted.
+2025-02-19 17:50:33,850 - INFO - Analyzing enhanced feature distributions with a sampled subset.
+2025-02-19 17:50:51,299 - INFO - Logging initiated.
+2025-02-19 17:50:51,299 - INFO - Pipeline started.
+2025-02-19 17:50:51,299 - INFO - Loading image from 'data/csf2.tif'.
+2025-02-19 17:50:51,682 - INFO - Image loaded with shape (144, 763, 260).
+2025-02-19 17:50:51,783 - INFO - Calculated CSF Volume: 17869553.923145205 mm³
+2025-02-19 17:50:52,010 - INFO - Denoised image loaded.
+2025-02-19 17:50:52,011 - INFO - Current memory usage: 561.70 MB
+2025-02-19 17:50:52,153 - INFO - Starting intensity normalization.
+2025-02-19 17:50:53,031 - INFO - Intensity normalization complete.
+2025-02-19 17:50:53,031 - INFO - Current memory usage: 707.64 MB
+2025-02-19 17:50:53,041 - INFO - Using top third of the MRI data: new shape (160, 263, 260)
+2025-02-19 17:50:53,041 - INFO - Computing neighborhood statistics.
+2025-02-19 17:50:53,534 - INFO - Neighborhood statistics computed.
+2025-02-19 17:50:53,535 - INFO - Current memory usage: 665.76 MB
+2025-02-19 17:50:53,535 - INFO - Computing z-axis value for each voxel.
+2025-02-19 17:50:53,569 - INFO - Z-axis value for each voxel computed.
+2025-02-19 17:50:53,569 - INFO - Current memory usage: 707.38 MB
+2025-02-19 17:50:53,569 - INFO - Preparing features for K-Means clustering with spatial connectivity.
+2025-02-19 17:50:54,083 - INFO - Features shape: (10940800, 4)
+2025-02-19 17:50:54,084 - INFO - Current memory usage: 938.80 MB
+2025-02-19 17:50:54,084 - INFO - Performing MiniBatch K-Means clustering with k=5, batch_size=10000, connectivity_weight=0.2.
+2025-02-19 17:51:04,016 - INFO - Features shape after adding spatial connectivity: (10940800, 7)
+2025-02-19 17:51:10,386 - INFO - Clustering complete with spatial connectivity.
+2025-02-19 17:51:10,388 - INFO - Current memory usage: 1357.15 MB
+2025-02-19 17:51:10,476 - INFO - Cluster labels reshaped to image dimensions.
+2025-02-19 17:51:10,477 - INFO - Current memory usage: 772.85 MB
+2025-02-19 17:51:10,503 - INFO - Processing Cluster 0.
+2025-02-19 17:51:10,542 - INFO - Cluster 0: Initial voxel count = 544935.
+2025-02-19 17:51:37,549 - INFO - Cluster 0: Refined voxel count = 10250.
+2025-02-19 17:51:37,587 - INFO - Refined mask for Cluster 0 saved as 'csf_mask_class_0_refined_2.tif'.
+2025-02-19 17:51:37,950 - INFO - Cluster 0: Mean Intensity = 1.4181171655654907
+2025-02-19 17:51:37,951 - INFO - Processing Cluster 1.
+2025-02-19 17:51:37,978 - INFO - Cluster 1: Initial voxel count = 229373.
+2025-02-19 17:52:01,420 - INFO - Cluster 1: Refined voxel count = 61834.
+2025-02-19 17:52:01,452 - INFO - Refined mask for Cluster 1 saved as 'csf_mask_class_1_refined_2.tif'.
+2025-02-19 17:52:01,649 - INFO - Cluster 1: Mean Intensity = 8.865165710449219
+2025-02-19 17:52:01,649 - INFO - Processing Cluster 2.
+2025-02-19 17:52:01,673 - INFO - Cluster 2: Initial voxel count = 3216808.
+2025-02-19 17:52:23,010 - INFO - Cluster 2: Refined voxel count = 379302.
+2025-02-19 17:52:23,045 - INFO - Refined mask for Cluster 2 saved as 'csf_mask_class_2_refined_2.tif'.
+2025-02-19 17:52:23,254 - INFO - Cluster 2: Mean Intensity = 0.20149455964565277
+2025-02-19 17:52:23,254 - INFO - Processing Cluster 3.
+2025-02-19 17:52:23,274 - INFO - Cluster 3: Initial voxel count = 3641452.
+2025-02-19 17:52:43,159 - INFO - Cluster 3: Refined voxel count = 2722526.
+2025-02-19 17:52:43,191 - INFO - Refined mask for Cluster 3 saved as 'csf_mask_class_3_refined_2.tif'.
+2025-02-19 17:52:43,409 - INFO - Cluster 3: Mean Intensity = -0.22567543387413025
+2025-02-19 17:52:43,409 - INFO - Processing Cluster 4.
+2025-02-19 17:52:43,436 - INFO - Cluster 4: Initial voxel count = 3308232.
+2025-02-19 17:53:03,105 - INFO - Cluster 4: Refined voxel count = 2699656.
+2025-02-19 17:53:03,125 - INFO - Refined mask for Cluster 4 saved as 'csf_mask_class_4_refined_2.tif'.
+2025-02-19 17:53:03,349 - INFO - Cluster 4: Mean Intensity = -0.2699243128299713
+2025-02-19 17:53:03,349 - INFO - CSF is identified as cluster 1.
+2025-02-19 17:53:03,349 - INFO - Starting visualization with PyVista.
+2025-02-19 17:53:04,078 - INFO - Adding Original MRI volume.
+2025-02-19 17:53:04,653 - INFO - Adding Denoised MRI volume.
+2025-02-19 17:53:05,190 - INFO - Adding Mask 0 mesh to visualization.
+2025-02-19 17:53:05,344 - INFO - Initial mesh has 2004 points and 3952 faces.
+2025-02-19 17:53:05,345 - INFO - Current memory usage: 860.09 MB
+2025-02-19 17:53:05,374 - INFO - Decimated mesh has 1016 points and 1976 faces.
+2025-02-19 17:53:05,374 - INFO - Current memory usage: 860.89 MB
+2025-02-19 17:53:05,388 - INFO - Adding Mask 1 mesh to visualization.
+2025-02-19 17:53:05,556 - INFO - Initial mesh has 10735 points and 21406 faces.
+2025-02-19 17:53:05,556 - INFO - Current memory usage: 860.81 MB
+2025-02-19 17:53:05,705 - INFO - Decimated mesh has 5383 points and 10702 faces.
+2025-02-19 17:53:05,706 - INFO - Current memory usage: 861.94 MB
+2025-02-19 17:53:05,716 - INFO - Adding Mask 2 mesh to visualization.
+2025-02-19 17:53:06,269 - INFO - Initial mesh has 54878 points and 109828 faces.
+2025-02-19 17:53:06,270 - INFO - Current memory usage: 880.16 MB
+2025-02-19 17:53:07,117 - INFO - Decimated mesh has 27409 points and 54914 faces.
+2025-02-19 17:53:07,117 - INFO - Current memory usage: 915.79 MB
+2025-02-19 17:53:07,128 - INFO - Adding Mask 3 mesh to visualization.
+2025-02-19 17:53:07,330 - INFO - Initial mesh has 36838 points and 72646 faces.
+2025-02-19 17:53:07,330 - INFO - Current memory usage: 915.89 MB
+2025-02-19 17:53:07,897 - INFO - Decimated mesh has 18475 points and 36323 faces.
+2025-02-19 17:53:07,898 - INFO - Current memory usage: 917.27 MB
+2025-02-19 17:53:07,908 - INFO - Adding Mask 4 mesh to visualization.
+2025-02-19 17:53:08,091 - INFO - Initial mesh has 27522 points and 54062 faces.
+2025-02-19 17:53:08,092 - INFO - Current memory usage: 918.57 MB
+2025-02-19 17:53:08,509 - INFO - Decimated mesh has 13815 points and 27030 faces.
+2025-02-19 17:53:08,510 - INFO - Current memory usage: 918.57 MB
+2025-02-19 17:53:08,523 - INFO - Exporting visualization to '/home/fred/Documents/TP_Lebret/IRM/ALL_clusters.html'.
+2025-02-19 17:53:09,247 - INFO - Translator(prefix=None)
+2025-02-19 17:53:09,371 - INFO - awaiting runner setup
+2025-02-19 17:53:09,372 - INFO - awaiting site startup
+2025-02-19 17:53:09,373 - INFO - Print WSLINK_READY_MSG
+2025-02-19 17:53:09,373 - INFO - Schedule auto shutdown with timout 0
+2025-02-19 17:53:09,373 - INFO - awaiting running future
+2025-02-19 17:53:26,145 - INFO - Visualization successfully saved to '/home/fred/Documents/TP_Lebret/IRM/ALL_clusters.html'.
+2025-02-19 17:53:26,208 - INFO - Current memory usage: 939.43 MB
+2025-02-19 17:53:26,238 - INFO - Selected slice indices for saving: [0, 3, 6, 9, 12, 16, 19, 22, 25, 29, 32, 35, 38, 42, 45, 48, 51, 55, 58, 61, 64, 68, 71, 74, 77, 81, 84, 87, 90, 94, 97, 100, 103, 107, 110, 113, 116, 120, 123, 126, 129, 133, 136, 139, 142, 146, 149, 152, 155, 159]
+2025-02-19 17:53:27,367 - INFO - Saved slice 0 overlay for Cluster 0 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_0_cluster_0_overlay.png'.
+2025-02-19 17:53:27,779 - INFO - Saved slice 0 overlay for Cluster 1 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_0_cluster_1_overlay.png'.
+2025-02-19 17:53:28,180 - INFO - Saved slice 0 overlay for Cluster 2 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_0_cluster_2_overlay.png'.
+2025-02-19 17:53:28,590 - INFO - Saved slice 0 overlay for Cluster 3 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_0_cluster_3_overlay.png'.
+2025-02-19 17:53:28,976 - INFO - Saved slice 0 overlay for Cluster 4 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_0_cluster_4_overlay.png'.
+2025-02-19 17:53:29,374 - INFO - Saved slice 3 overlay for Cluster 0 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_3_cluster_0_overlay.png'.
+2025-02-19 17:53:29,753 - INFO - Saved slice 3 overlay for Cluster 1 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_3_cluster_1_overlay.png'.
+2025-02-19 17:53:30,149 - INFO - Saved slice 3 overlay for Cluster 2 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_3_cluster_2_overlay.png'.
+2025-02-19 17:53:30,577 - INFO - Saved slice 3 overlay for Cluster 3 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_3_cluster_3_overlay.png'.
+2025-02-19 17:53:30,976 - INFO - Saved slice 3 overlay for Cluster 4 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_3_cluster_4_overlay.png'.
+2025-02-19 17:53:31,351 - INFO - Saved slice 6 overlay for Cluster 0 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_6_cluster_0_overlay.png'.
+2025-02-19 17:53:31,778 - INFO - Saved slice 6 overlay for Cluster 1 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_6_cluster_1_overlay.png'.
+2025-02-19 17:53:32,162 - INFO - Saved slice 6 overlay for Cluster 2 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_6_cluster_2_overlay.png'.
+2025-02-19 17:53:32,561 - INFO - Saved slice 6 overlay for Cluster 3 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_6_cluster_3_overlay.png'.
+2025-02-19 17:53:33,006 - INFO - Saved slice 6 overlay for Cluster 4 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_6_cluster_4_overlay.png'.
+2025-02-19 17:53:33,440 - INFO - Saved slice 9 overlay for Cluster 0 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_9_cluster_0_overlay.png'.
+2025-02-19 17:53:33,836 - INFO - Saved slice 9 overlay for Cluster 1 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_9_cluster_1_overlay.png'.
+2025-02-19 17:53:34,322 - INFO - Saved slice 9 overlay for Cluster 2 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_9_cluster_2_overlay.png'.
+2025-02-19 17:53:34,730 - INFO - Saved slice 9 overlay for Cluster 3 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_9_cluster_3_overlay.png'.
+2025-02-19 17:53:35,237 - INFO - Saved slice 9 overlay for Cluster 4 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_9_cluster_4_overlay.png'.
+2025-02-19 17:53:35,692 - INFO - Saved slice 12 overlay for Cluster 0 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_12_cluster_0_overlay.png'.
+2025-02-19 17:53:36,158 - INFO - Saved slice 12 overlay for Cluster 1 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_12_cluster_1_overlay.png'.
+2025-02-19 17:53:36,567 - INFO - Saved slice 12 overlay for Cluster 2 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_12_cluster_2_overlay.png'.
+2025-02-19 17:53:36,926 - INFO - Saved slice 12 overlay for Cluster 3 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_12_cluster_3_overlay.png'.
+2025-02-19 17:53:37,559 - INFO - Saved slice 12 overlay for Cluster 4 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_12_cluster_4_overlay.png'.
+2025-02-19 17:53:37,828 - INFO - Saved slice 16 overlay for Cluster 0 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_16_cluster_0_overlay.png'.
+2025-02-19 17:53:38,071 - INFO - Saved slice 16 overlay for Cluster 1 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_16_cluster_1_overlay.png'.
+2025-02-19 17:53:38,340 - INFO - Saved slice 16 overlay for Cluster 2 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_16_cluster_2_overlay.png'.
+2025-02-19 17:53:38,577 - INFO - Saved slice 16 overlay for Cluster 3 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_16_cluster_3_overlay.png'.
+2025-02-19 17:53:38,824 - INFO - Saved slice 16 overlay for Cluster 4 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_16_cluster_4_overlay.png'.
+2025-02-19 17:53:39,065 - INFO - Saved slice 19 overlay for Cluster 0 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_19_cluster_0_overlay.png'.
+2025-02-19 17:53:39,279 - INFO - Saved slice 19 overlay for Cluster 1 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_19_cluster_1_overlay.png'.
+2025-02-19 17:53:39,517 - INFO - Saved slice 19 overlay for Cluster 2 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_19_cluster_2_overlay.png'.
+2025-02-19 17:53:39,734 - INFO - Saved slice 19 overlay for Cluster 3 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_19_cluster_3_overlay.png'.
+2025-02-19 17:53:40,059 - INFO - Saved slice 19 overlay for Cluster 4 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_19_cluster_4_overlay.png'.
+2025-02-19 17:53:40,296 - INFO - Saved slice 22 overlay for Cluster 0 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_22_cluster_0_overlay.png'.
+2025-02-19 17:53:40,494 - INFO - Saved slice 22 overlay for Cluster 1 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_22_cluster_1_overlay.png'.
+2025-02-19 17:53:40,691 - INFO - Saved slice 22 overlay for Cluster 2 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_22_cluster_2_overlay.png'.
+2025-02-19 17:53:40,919 - INFO - Saved slice 22 overlay for Cluster 3 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_22_cluster_3_overlay.png'.
+2025-02-19 17:53:41,120 - INFO - Saved slice 22 overlay for Cluster 4 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_22_cluster_4_overlay.png'.
+2025-02-19 17:53:41,360 - INFO - Saved slice 25 overlay for Cluster 0 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_25_cluster_0_overlay.png'.
+2025-02-19 17:53:41,568 - INFO - Saved slice 25 overlay for Cluster 1 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_25_cluster_1_overlay.png'.
+2025-02-19 17:53:41,784 - INFO - Saved slice 25 overlay for Cluster 2 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_25_cluster_2_overlay.png'.
+2025-02-19 17:53:42,007 - INFO - Saved slice 25 overlay for Cluster 3 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_25_cluster_3_overlay.png'.
+2025-02-19 17:53:42,223 - INFO - Saved slice 25 overlay for Cluster 4 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_25_cluster_4_overlay.png'.
+2025-02-19 17:53:42,425 - INFO - Saved slice 29 overlay for Cluster 0 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_29_cluster_0_overlay.png'.
+2025-02-19 17:53:42,630 - INFO - Saved slice 29 overlay for Cluster 1 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_29_cluster_1_overlay.png'.
+2025-02-19 17:53:42,853 - INFO - Saved slice 29 overlay for Cluster 2 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_29_cluster_2_overlay.png'.
+2025-02-19 17:53:43,074 - INFO - Saved slice 29 overlay for Cluster 3 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_29_cluster_3_overlay.png'.
+2025-02-19 17:53:43,299 - INFO - Saved slice 29 overlay for Cluster 4 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_29_cluster_4_overlay.png'.
+2025-02-19 17:53:43,509 - INFO - Saved slice 32 overlay for Cluster 0 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_32_cluster_0_overlay.png'.
+2025-02-19 17:53:43,728 - INFO - Saved slice 32 overlay for Cluster 1 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_32_cluster_1_overlay.png'.
+2025-02-19 17:53:44,004 - INFO - Saved slice 32 overlay for Cluster 2 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_32_cluster_2_overlay.png'.
+2025-02-19 17:53:44,233 - INFO - Saved slice 32 overlay for Cluster 3 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_32_cluster_3_overlay.png'.
+2025-02-19 17:53:44,446 - INFO - Saved slice 32 overlay for Cluster 4 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_32_cluster_4_overlay.png'.
+2025-02-19 17:53:44,669 - INFO - Saved slice 35 overlay for Cluster 0 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_35_cluster_0_overlay.png'.
+2025-02-19 17:53:44,937 - INFO - Saved slice 35 overlay for Cluster 1 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_35_cluster_1_overlay.png'.
+2025-02-19 17:53:45,151 - INFO - Saved slice 35 overlay for Cluster 2 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_35_cluster_2_overlay.png'.
+2025-02-19 17:53:45,348 - INFO - Saved slice 35 overlay for Cluster 3 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_35_cluster_3_overlay.png'.
+2025-02-19 17:53:45,530 - INFO - Saved slice 35 overlay for Cluster 4 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_35_cluster_4_overlay.png'.
+2025-02-19 17:53:45,708 - INFO - Saved slice 38 overlay for Cluster 0 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_38_cluster_0_overlay.png'.
+2025-02-19 17:53:46,044 - INFO - Saved slice 38 overlay for Cluster 1 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_38_cluster_1_overlay.png'.
+2025-02-19 17:53:46,336 - INFO - Saved slice 38 overlay for Cluster 2 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_38_cluster_2_overlay.png'.
+2025-02-19 17:53:46,603 - INFO - Saved slice 38 overlay for Cluster 3 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_38_cluster_3_overlay.png'.
+2025-02-19 17:53:46,953 - INFO - Saved slice 38 overlay for Cluster 4 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_38_cluster_4_overlay.png'.
+2025-02-19 17:53:47,241 - INFO - Saved slice 42 overlay for Cluster 0 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_42_cluster_0_overlay.png'.
+2025-02-19 17:53:47,474 - INFO - Saved slice 42 overlay for Cluster 1 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_42_cluster_1_overlay.png'.
+2025-02-19 17:53:47,751 - INFO - Saved slice 42 overlay for Cluster 2 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_42_cluster_2_overlay.png'.
+2025-02-19 17:53:48,158 - INFO - Saved slice 42 overlay for Cluster 3 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_42_cluster_3_overlay.png'.
+2025-02-19 17:53:48,496 - INFO - Saved slice 42 overlay for Cluster 4 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_42_cluster_4_overlay.png'.
+2025-02-19 17:53:48,725 - INFO - Saved slice 45 overlay for Cluster 0 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_45_cluster_0_overlay.png'.
+2025-02-19 17:53:48,936 - INFO - Saved slice 45 overlay for Cluster 1 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_45_cluster_1_overlay.png'.
+2025-02-19 17:53:49,138 - INFO - Saved slice 45 overlay for Cluster 2 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_45_cluster_2_overlay.png'.
+2025-02-19 17:53:49,325 - INFO - Saved slice 45 overlay for Cluster 3 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_45_cluster_3_overlay.png'.
+2025-02-19 17:53:49,504 - INFO - Saved slice 45 overlay for Cluster 4 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_45_cluster_4_overlay.png'.
+2025-02-19 17:53:49,671 - INFO - Saved slice 48 overlay for Cluster 0 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_48_cluster_0_overlay.png'.
+2025-02-19 17:53:49,900 - INFO - Saved slice 48 overlay for Cluster 1 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_48_cluster_1_overlay.png'.
+2025-02-19 17:53:50,135 - INFO - Saved slice 48 overlay for Cluster 2 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_48_cluster_2_overlay.png'.
+2025-02-19 17:53:50,341 - INFO - Saved slice 48 overlay for Cluster 3 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_48_cluster_3_overlay.png'.
+2025-02-19 17:53:50,536 - INFO - Saved slice 48 overlay for Cluster 4 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_48_cluster_4_overlay.png'.
+2025-02-19 17:53:50,714 - INFO - Saved slice 51 overlay for Cluster 0 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_51_cluster_0_overlay.png'.
+2025-02-19 17:53:50,885 - INFO - Saved slice 51 overlay for Cluster 1 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_51_cluster_1_overlay.png'.
+2025-02-19 17:53:51,061 - INFO - Saved slice 51 overlay for Cluster 2 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_51_cluster_2_overlay.png'.
+2025-02-19 17:53:51,261 - INFO - Saved slice 51 overlay for Cluster 3 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_51_cluster_3_overlay.png'.
+2025-02-19 17:53:51,548 - INFO - Saved slice 51 overlay for Cluster 4 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_51_cluster_4_overlay.png'.
+2025-02-19 17:53:51,826 - INFO - Saved slice 55 overlay for Cluster 0 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_55_cluster_0_overlay.png'.
+2025-02-19 17:53:52,108 - INFO - Saved slice 55 overlay for Cluster 1 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_55_cluster_1_overlay.png'.
+2025-02-19 17:53:52,448 - INFO - Saved slice 55 overlay for Cluster 2 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_55_cluster_2_overlay.png'.
+2025-02-19 17:53:52,739 - INFO - Saved slice 55 overlay for Cluster 3 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_55_cluster_3_overlay.png'.
+2025-02-19 17:53:52,970 - INFO - Saved slice 55 overlay for Cluster 4 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_55_cluster_4_overlay.png'.
+2025-02-19 17:53:53,261 - INFO - Saved slice 58 overlay for Cluster 0 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_58_cluster_0_overlay.png'.
+2025-02-19 17:53:53,507 - INFO - Saved slice 58 overlay for Cluster 1 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_58_cluster_1_overlay.png'.
+2025-02-19 17:53:53,755 - INFO - Saved slice 58 overlay for Cluster 2 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_58_cluster_2_overlay.png'.
+2025-02-19 17:53:54,089 - INFO - Saved slice 58 overlay for Cluster 3 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_58_cluster_3_overlay.png'.
+2025-02-19 17:53:54,376 - INFO - Saved slice 58 overlay for Cluster 4 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_58_cluster_4_overlay.png'.
+2025-02-19 17:53:54,613 - INFO - Saved slice 61 overlay for Cluster 0 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_61_cluster_0_overlay.png'.
+2025-02-19 17:53:54,935 - INFO - Saved slice 61 overlay for Cluster 1 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_61_cluster_1_overlay.png'.
+2025-02-19 17:53:55,270 - INFO - Saved slice 61 overlay for Cluster 2 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_61_cluster_2_overlay.png'.
+2025-02-19 17:53:55,655 - INFO - Saved slice 61 overlay for Cluster 3 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_61_cluster_3_overlay.png'.
+2025-02-19 17:53:55,992 - INFO - Saved slice 61 overlay for Cluster 4 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_61_cluster_4_overlay.png'.
+2025-02-19 17:53:56,211 - INFO - Saved slice 64 overlay for Cluster 0 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_64_cluster_0_overlay.png'.
+2025-02-19 17:53:56,565 - INFO - Saved slice 64 overlay for Cluster 1 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_64_cluster_1_overlay.png'.
+2025-02-19 17:53:56,747 - INFO - Saved slice 64 overlay for Cluster 2 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_64_cluster_2_overlay.png'.
+2025-02-19 17:53:56,954 - INFO - Saved slice 64 overlay for Cluster 3 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_64_cluster_3_overlay.png'.
+2025-02-19 17:53:57,133 - INFO - Saved slice 64 overlay for Cluster 4 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_64_cluster_4_overlay.png'.
+2025-02-19 17:53:57,366 - INFO - Saved slice 68 overlay for Cluster 0 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_68_cluster_0_overlay.png'.
+2025-02-19 17:53:57,576 - INFO - Saved slice 68 overlay for Cluster 1 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_68_cluster_1_overlay.png'.
+2025-02-19 17:53:57,785 - INFO - Saved slice 68 overlay for Cluster 2 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_68_cluster_2_overlay.png'.
+2025-02-19 17:53:58,057 - INFO - Saved slice 68 overlay for Cluster 3 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_68_cluster_3_overlay.png'.
+2025-02-19 17:53:58,277 - INFO - Saved slice 68 overlay for Cluster 4 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_68_cluster_4_overlay.png'.
+2025-02-19 17:53:58,481 - INFO - Saved slice 71 overlay for Cluster 0 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_71_cluster_0_overlay.png'.
+2025-02-19 17:53:58,674 - INFO - Saved slice 71 overlay for Cluster 1 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_71_cluster_1_overlay.png'.
+2025-02-19 17:53:58,882 - INFO - Saved slice 71 overlay for Cluster 2 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_71_cluster_2_overlay.png'.
+2025-02-19 17:53:59,113 - INFO - Saved slice 71 overlay for Cluster 3 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_71_cluster_3_overlay.png'.
+2025-02-19 17:53:59,319 - INFO - Saved slice 71 overlay for Cluster 4 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_71_cluster_4_overlay.png'.
+2025-02-19 17:53:59,521 - INFO - Saved slice 74 overlay for Cluster 0 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_74_cluster_0_overlay.png'.
+2025-02-19 17:53:59,744 - INFO - Saved slice 74 overlay for Cluster 1 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_74_cluster_1_overlay.png'.
+2025-02-19 17:53:59,985 - INFO - Saved slice 74 overlay for Cluster 2 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_74_cluster_2_overlay.png'.
+2025-02-19 17:54:00,209 - INFO - Saved slice 74 overlay for Cluster 3 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_74_cluster_3_overlay.png'.
+2025-02-19 17:54:00,400 - INFO - Saved slice 74 overlay for Cluster 4 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_74_cluster_4_overlay.png'.
+2025-02-19 17:54:00,577 - INFO - Saved slice 77 overlay for Cluster 0 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_77_cluster_0_overlay.png'.
+2025-02-19 17:54:00,769 - INFO - Saved slice 77 overlay for Cluster 1 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_77_cluster_1_overlay.png'.
+2025-02-19 17:54:00,981 - INFO - Saved slice 77 overlay for Cluster 2 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_77_cluster_2_overlay.png'.
+2025-02-19 17:54:01,169 - INFO - Saved slice 77 overlay for Cluster 3 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_77_cluster_3_overlay.png'.
+2025-02-19 17:54:01,388 - INFO - Saved slice 77 overlay for Cluster 4 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_77_cluster_4_overlay.png'.
+2025-02-19 17:54:01,667 - INFO - Saved slice 81 overlay for Cluster 0 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_81_cluster_0_overlay.png'.
+2025-02-19 17:54:01,976 - INFO - Saved slice 81 overlay for Cluster 1 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_81_cluster_1_overlay.png'.
+2025-02-19 17:54:02,339 - INFO - Saved slice 81 overlay for Cluster 2 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_81_cluster_2_overlay.png'.
+2025-02-19 17:54:02,606 - INFO - Saved slice 81 overlay for Cluster 3 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_81_cluster_3_overlay.png'.
+2025-02-19 17:54:02,906 - INFO - Saved slice 81 overlay for Cluster 4 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_81_cluster_4_overlay.png'.
+2025-02-19 17:54:03,199 - INFO - Saved slice 84 overlay for Cluster 0 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_84_cluster_0_overlay.png'.
+2025-02-19 17:54:03,423 - INFO - Saved slice 84 overlay for Cluster 1 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_84_cluster_1_overlay.png'.
+2025-02-19 17:54:03,629 - INFO - Saved slice 84 overlay for Cluster 2 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_84_cluster_2_overlay.png'.
+2025-02-19 17:54:03,888 - INFO - Saved slice 84 overlay for Cluster 3 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_84_cluster_3_overlay.png'.
+2025-02-19 17:54:04,174 - INFO - Saved slice 84 overlay for Cluster 4 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_84_cluster_4_overlay.png'.
+2025-02-19 17:54:04,417 - INFO - Saved slice 87 overlay for Cluster 0 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_87_cluster_0_overlay.png'.
+2025-02-19 17:54:04,671 - INFO - Saved slice 87 overlay for Cluster 1 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_87_cluster_1_overlay.png'.
+2025-02-19 17:54:05,010 - INFO - Saved slice 87 overlay for Cluster 2 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_87_cluster_2_overlay.png'.
+2025-02-19 17:54:05,394 - INFO - Saved slice 87 overlay for Cluster 3 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_87_cluster_3_overlay.png'.
+2025-02-19 17:54:05,705 - INFO - Saved slice 87 overlay for Cluster 4 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_87_cluster_4_overlay.png'.
+2025-02-19 17:54:06,113 - INFO - Saved slice 90 overlay for Cluster 0 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_90_cluster_0_overlay.png'.
+2025-02-19 17:54:06,529 - INFO - Saved slice 90 overlay for Cluster 1 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_90_cluster_1_overlay.png'.
+2025-02-19 17:54:06,916 - INFO - Saved slice 90 overlay for Cluster 2 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_90_cluster_2_overlay.png'.
+2025-02-19 17:54:07,397 - INFO - Saved slice 90 overlay for Cluster 3 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_90_cluster_3_overlay.png'.
+2025-02-19 17:54:07,790 - INFO - Saved slice 90 overlay for Cluster 4 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_90_cluster_4_overlay.png'.
+2025-02-19 17:54:08,232 - INFO - Saved slice 94 overlay for Cluster 0 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_94_cluster_0_overlay.png'.
+2025-02-19 17:54:08,625 - INFO - Saved slice 94 overlay for Cluster 1 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_94_cluster_1_overlay.png'.
+2025-02-19 17:54:09,060 - INFO - Saved slice 94 overlay for Cluster 2 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_94_cluster_2_overlay.png'.
+2025-02-19 17:54:09,393 - INFO - Saved slice 94 overlay for Cluster 3 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_94_cluster_3_overlay.png'.
+2025-02-19 17:54:09,693 - INFO - Saved slice 94 overlay for Cluster 4 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_94_cluster_4_overlay.png'.
+2025-02-19 17:54:10,030 - INFO - Saved slice 97 overlay for Cluster 0 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_97_cluster_0_overlay.png'.
+2025-02-19 17:54:10,302 - INFO - Saved slice 97 overlay for Cluster 1 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_97_cluster_1_overlay.png'.
+2025-02-19 17:54:10,617 - INFO - Saved slice 97 overlay for Cluster 2 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_97_cluster_2_overlay.png'.
+2025-02-19 17:54:11,011 - INFO - Saved slice 97 overlay for Cluster 3 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_97_cluster_3_overlay.png'.
+2025-02-19 17:54:11,299 - INFO - Saved slice 97 overlay for Cluster 4 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_97_cluster_4_overlay.png'.
+2025-02-19 17:54:11,607 - INFO - Saved slice 100 overlay for Cluster 0 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_100_cluster_0_overlay.png'.
+2025-02-19 17:54:11,903 - INFO - Saved slice 100 overlay for Cluster 1 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_100_cluster_1_overlay.png'.
+2025-02-19 17:54:12,169 - INFO - Saved slice 100 overlay for Cluster 2 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_100_cluster_2_overlay.png'.
+2025-02-19 17:54:12,476 - INFO - Saved slice 100 overlay for Cluster 3 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_100_cluster_3_overlay.png'.
+2025-02-19 17:54:12,774 - INFO - Saved slice 100 overlay for Cluster 4 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_100_cluster_4_overlay.png'.
+2025-02-19 17:54:13,174 - INFO - Saved slice 103 overlay for Cluster 0 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_103_cluster_0_overlay.png'.
+2025-02-19 17:54:13,588 - INFO - Saved slice 103 overlay for Cluster 1 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_103_cluster_1_overlay.png'.
+2025-02-19 17:54:14,020 - INFO - Saved slice 103 overlay for Cluster 2 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_103_cluster_2_overlay.png'.
+2025-02-19 17:54:14,333 - INFO - Saved slice 103 overlay for Cluster 3 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_103_cluster_3_overlay.png'.
+2025-02-19 17:54:14,639 - INFO - Saved slice 103 overlay for Cluster 4 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_103_cluster_4_overlay.png'.
+2025-02-19 17:54:15,053 - INFO - Saved slice 107 overlay for Cluster 0 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_107_cluster_0_overlay.png'.
+2025-02-19 17:54:15,385 - INFO - Saved slice 107 overlay for Cluster 1 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_107_cluster_1_overlay.png'.
+2025-02-19 17:54:15,683 - INFO - Saved slice 107 overlay for Cluster 2 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_107_cluster_2_overlay.png'.
+2025-02-19 17:54:16,002 - INFO - Saved slice 107 overlay for Cluster 3 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_107_cluster_3_overlay.png'.
+2025-02-19 17:54:16,377 - INFO - Saved slice 107 overlay for Cluster 4 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_107_cluster_4_overlay.png'.
+2025-02-19 17:54:16,702 - INFO - Saved slice 110 overlay for Cluster 0 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_110_cluster_0_overlay.png'.
+2025-02-19 17:54:17,034 - INFO - Saved slice 110 overlay for Cluster 1 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_110_cluster_1_overlay.png'.
+2025-02-19 17:54:17,381 - INFO - Saved slice 110 overlay for Cluster 2 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_110_cluster_2_overlay.png'.
+2025-02-19 17:54:17,694 - INFO - Saved slice 110 overlay for Cluster 3 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_110_cluster_3_overlay.png'.
+2025-02-19 17:54:18,080 - INFO - Saved slice 110 overlay for Cluster 4 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_110_cluster_4_overlay.png'.
+2025-02-19 17:54:18,422 - INFO - Saved slice 113 overlay for Cluster 0 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_113_cluster_0_overlay.png'.
+2025-02-19 17:54:18,810 - INFO - Saved slice 113 overlay for Cluster 1 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_113_cluster_1_overlay.png'.
+2025-02-19 17:54:19,308 - INFO - Saved slice 113 overlay for Cluster 2 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_113_cluster_2_overlay.png'.
+2025-02-19 17:54:19,795 - INFO - Saved slice 113 overlay for Cluster 3 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_113_cluster_3_overlay.png'.
+2025-02-19 17:54:20,291 - INFO - Saved slice 113 overlay for Cluster 4 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_113_cluster_4_overlay.png'.
+2025-02-19 17:54:23,463 - INFO - Saved slice 116 overlay for Cluster 0 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_116_cluster_0_overlay.png'.
+2025-02-19 17:54:24,308 - INFO - Saved slice 116 overlay for Cluster 1 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_116_cluster_1_overlay.png'.
+2025-02-19 17:54:24,753 - INFO - Saved slice 116 overlay for Cluster 2 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_116_cluster_2_overlay.png'.
+2025-02-19 17:54:25,228 - INFO - Saved slice 116 overlay for Cluster 3 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_116_cluster_3_overlay.png'.
+2025-02-19 17:54:25,686 - INFO - Saved slice 116 overlay for Cluster 4 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_116_cluster_4_overlay.png'.
+2025-02-19 17:54:26,070 - INFO - Saved slice 120 overlay for Cluster 0 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_120_cluster_0_overlay.png'.
+2025-02-19 17:54:26,382 - INFO - Saved slice 120 overlay for Cluster 1 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_120_cluster_1_overlay.png'.
+2025-02-19 17:54:26,612 - INFO - Saved slice 120 overlay for Cluster 2 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_120_cluster_2_overlay.png'.
+2025-02-19 17:54:26,816 - INFO - Saved slice 120 overlay for Cluster 3 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_120_cluster_3_overlay.png'.
+2025-02-19 17:54:27,008 - INFO - Saved slice 120 overlay for Cluster 4 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_120_cluster_4_overlay.png'.
+2025-02-19 17:54:27,182 - INFO - Saved slice 123 overlay for Cluster 0 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_123_cluster_0_overlay.png'.
+2025-02-19 17:54:27,362 - INFO - Saved slice 123 overlay for Cluster 1 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_123_cluster_1_overlay.png'.
+2025-02-19 17:54:27,539 - INFO - Saved slice 123 overlay for Cluster 2 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_123_cluster_2_overlay.png'.
+2025-02-19 17:54:27,717 - INFO - Saved slice 123 overlay for Cluster 3 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_123_cluster_3_overlay.png'.
+2025-02-19 17:54:27,911 - INFO - Saved slice 123 overlay for Cluster 4 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_123_cluster_4_overlay.png'.
+2025-02-19 17:54:28,091 - INFO - Saved slice 126 overlay for Cluster 0 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_126_cluster_0_overlay.png'.
+2025-02-19 17:54:28,276 - INFO - Saved slice 126 overlay for Cluster 1 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_126_cluster_1_overlay.png'.
+2025-02-19 17:54:28,564 - INFO - Saved slice 126 overlay for Cluster 2 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_126_cluster_2_overlay.png'.
+2025-02-19 17:54:28,890 - INFO - Saved slice 126 overlay for Cluster 3 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_126_cluster_3_overlay.png'.
+2025-02-19 17:54:29,209 - INFO - Saved slice 126 overlay for Cluster 4 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_126_cluster_4_overlay.png'.
+2025-02-19 17:54:29,525 - INFO - Saved slice 129 overlay for Cluster 0 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_129_cluster_0_overlay.png'.
+2025-02-19 17:54:29,855 - INFO - Saved slice 129 overlay for Cluster 1 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_129_cluster_1_overlay.png'.
+2025-02-19 17:54:30,130 - INFO - Saved slice 129 overlay for Cluster 2 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_129_cluster_2_overlay.png'.
+2025-02-19 17:54:30,403 - INFO - Saved slice 129 overlay for Cluster 3 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_129_cluster_3_overlay.png'.
+2025-02-19 17:54:30,634 - INFO - Saved slice 129 overlay for Cluster 4 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_129_cluster_4_overlay.png'.
+2025-02-19 17:54:30,875 - INFO - Saved slice 133 overlay for Cluster 0 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_133_cluster_0_overlay.png'.
+2025-02-19 17:54:31,172 - INFO - Saved slice 133 overlay for Cluster 1 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_133_cluster_1_overlay.png'.
+2025-02-19 17:54:31,419 - INFO - Saved slice 133 overlay for Cluster 2 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_133_cluster_2_overlay.png'.
+2025-02-19 17:54:31,681 - INFO - Saved slice 133 overlay for Cluster 3 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_133_cluster_3_overlay.png'.
+2025-02-19 17:54:31,936 - INFO - Saved slice 133 overlay for Cluster 4 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_133_cluster_4_overlay.png'.
+2025-02-19 17:54:32,146 - INFO - Saved slice 136 overlay for Cluster 0 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_136_cluster_0_overlay.png'.
+2025-02-19 17:54:32,350 - INFO - Saved slice 136 overlay for Cluster 1 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_136_cluster_1_overlay.png'.
+2025-02-19 17:54:32,538 - INFO - Saved slice 136 overlay for Cluster 2 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_136_cluster_2_overlay.png'.
+2025-02-19 17:54:32,729 - INFO - Saved slice 136 overlay for Cluster 3 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_136_cluster_3_overlay.png'.
+2025-02-19 17:54:33,107 - INFO - Saved slice 136 overlay for Cluster 4 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_136_cluster_4_overlay.png'.
+2025-02-19 17:54:33,530 - INFO - Saved slice 139 overlay for Cluster 0 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_139_cluster_0_overlay.png'.
+2025-02-19 17:54:33,860 - INFO - Saved slice 139 overlay for Cluster 1 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_139_cluster_1_overlay.png'.
+2025-02-19 17:54:34,243 - INFO - Saved slice 139 overlay for Cluster 2 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_139_cluster_2_overlay.png'.
+2025-02-19 17:54:34,592 - INFO - Saved slice 139 overlay for Cluster 3 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_139_cluster_3_overlay.png'.
+2025-02-19 17:54:35,000 - INFO - Saved slice 139 overlay for Cluster 4 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_139_cluster_4_overlay.png'.
+2025-02-19 17:54:35,487 - INFO - Saved slice 142 overlay for Cluster 0 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_142_cluster_0_overlay.png'.
+2025-02-19 17:54:35,946 - INFO - Saved slice 142 overlay for Cluster 1 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_142_cluster_1_overlay.png'.
+2025-02-19 17:54:36,355 - INFO - Saved slice 142 overlay for Cluster 2 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_142_cluster_2_overlay.png'.
+2025-02-19 17:54:36,833 - INFO - Saved slice 142 overlay for Cluster 3 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_142_cluster_3_overlay.png'.
+2025-02-19 17:54:37,219 - INFO - Saved slice 142 overlay for Cluster 4 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_142_cluster_4_overlay.png'.
+2025-02-19 17:54:37,620 - INFO - Saved slice 146 overlay for Cluster 0 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_146_cluster_0_overlay.png'.
+2025-02-19 17:54:37,993 - INFO - Saved slice 146 overlay for Cluster 1 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_146_cluster_1_overlay.png'.
+2025-02-19 17:54:38,339 - INFO - Saved slice 146 overlay for Cluster 2 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_146_cluster_2_overlay.png'.
+2025-02-19 17:54:38,634 - INFO - Saved slice 146 overlay for Cluster 3 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_146_cluster_3_overlay.png'.
+2025-02-19 17:54:38,947 - INFO - Saved slice 146 overlay for Cluster 4 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_146_cluster_4_overlay.png'.
+2025-02-19 17:54:39,324 - INFO - Saved slice 149 overlay for Cluster 0 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_149_cluster_0_overlay.png'.
+2025-02-19 17:54:39,684 - INFO - Saved slice 149 overlay for Cluster 1 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_149_cluster_1_overlay.png'.
+2025-02-19 17:54:40,080 - INFO - Saved slice 149 overlay for Cluster 2 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_149_cluster_2_overlay.png'.
+2025-02-19 17:54:40,483 - INFO - Saved slice 149 overlay for Cluster 3 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_149_cluster_3_overlay.png'.
+2025-02-19 17:54:40,801 - INFO - Saved slice 149 overlay for Cluster 4 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_149_cluster_4_overlay.png'.
+2025-02-19 17:54:41,263 - INFO - Saved slice 152 overlay for Cluster 0 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_152_cluster_0_overlay.png'.
+2025-02-19 17:54:41,660 - INFO - Saved slice 152 overlay for Cluster 1 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_152_cluster_1_overlay.png'.
+2025-02-19 17:54:42,092 - INFO - Saved slice 152 overlay for Cluster 2 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_152_cluster_2_overlay.png'.
+2025-02-19 17:54:42,534 - INFO - Saved slice 152 overlay for Cluster 3 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_152_cluster_3_overlay.png'.
+2025-02-19 17:54:42,953 - INFO - Saved slice 152 overlay for Cluster 4 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_152_cluster_4_overlay.png'.
+2025-02-19 17:54:43,283 - INFO - Saved slice 155 overlay for Cluster 0 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_155_cluster_0_overlay.png'.
+2025-02-19 17:54:43,623 - INFO - Saved slice 155 overlay for Cluster 1 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_155_cluster_1_overlay.png'.
+2025-02-19 17:54:44,018 - INFO - Saved slice 155 overlay for Cluster 2 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_155_cluster_2_overlay.png'.
+2025-02-19 17:54:44,429 - INFO - Saved slice 155 overlay for Cluster 3 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_155_cluster_3_overlay.png'.
+2025-02-19 17:54:44,842 - INFO - Saved slice 155 overlay for Cluster 4 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_155_cluster_4_overlay.png'.
+2025-02-19 17:54:45,205 - INFO - Saved slice 159 overlay for Cluster 0 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_159_cluster_0_overlay.png'.
+2025-02-19 17:54:45,568 - INFO - Saved slice 159 overlay for Cluster 1 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_159_cluster_1_overlay.png'.
+2025-02-19 17:54:46,001 - INFO - Saved slice 159 overlay for Cluster 2 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_159_cluster_2_overlay.png'.
+2025-02-19 17:54:46,424 - INFO - Saved slice 159 overlay for Cluster 3 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_159_cluster_3_overlay.png'.
+2025-02-19 17:54:46,843 - INFO - Saved slice 159 overlay for Cluster 4 as '/home/fred/Documents/TP_Lebret/IRM/slices/slice_159_cluster_4_overlay.png'.
+2025-02-19 17:54:46,856 - INFO - Pipeline completed successfully.
+2025-02-19 17:54:46,859 - INFO - Current memory usage: 856.75 MB
+2025-02-19 17:54:46,860 - INFO - Selecting and refining the good mask based on density profile.
+2025-02-19 17:54:46,863 - INFO - Selected good cluster mask with index 1.
+2025-02-19 17:54:46,863 - INFO - Removing eyes from the good cluster mask.
+2025-02-19 17:54:46,864 - INFO - Starting eye detection using connected components analysis.
+2025-02-19 17:54:47,109 - INFO - Number of connected components found: 28
+2025-02-19 17:54:50,632 - INFO - Detected potential eye at centroid: (50.6707136997539, 113.82953240360952, 59.52173913043478) with Volume: 6095.0 and Sphericity: 0.88
+2025-02-19 17:55:02,166 - INFO - Detected potential eye at centroid: (109.78648431214803, 112.71069991954948, 61.12566371681416) with Volume: 6215.0 and Sphericity: 0.88
+2025-02-19 17:55:04,621 - INFO - Saved detected eyes mask at '/home/fred/Documents/TP_Lebret/IRM/masks/detected_eyes_mask.tif'.
+2025-02-19 17:55:04,622 - INFO - Saved detected eyes coordinates at '/home/fred/Documents/TP_Lebret/IRM/masks/detected_eyes_mask_coords.json'.
+2025-02-19 17:55:05,761 - INFO - Saved visualization image with threshold lines at '/home/fred/Documents/TP_Lebret/IRM/masks/detected_eyes_mask_visualization.jpg'.
+2025-02-19 17:55:05,775 - INFO - Eyes have been removed from the CSF mask.
+2025-02-19 17:55:05,775 - INFO - Detected eyes at centroids: [(50, 113, 59), (109, 112, 61)]
+2025-02-19 17:55:09,356 - INFO - Saved overlaid refined CSF mask with eyes removed at '/home/fred/Documents/TP_Lebret/IRM/plots/refined_csf_with_eyes_removed.png'.
+2025-02-19 17:55:09,356 - INFO - Starting removal of small objects from the CSF mask with minimum size 200 voxels.
+2025-02-19 17:55:10,036 - INFO - Small objects removed from the CSF mask. New mask has 48466 voxels.
+2025-02-19 17:55:10,072 - INFO - Saving the good cluster mask as TIFF.
+2025-02-19 17:55:10,119 - INFO - Good cluster mask saved at '/home/fred/Documents/TP_Lebret/IRM/masks/good_csf_mask.tif'.
+2025-02-19 17:55:10,119 - INFO - Calculating the volume of CSF in the MRI.
+2025-02-19 17:55:10,412 - INFO - Calculated CSF Volume: 0.334101999742111 mm³
+2025-02-19 17:55:10,420 - INFO - Total CSF Volume: 0.334101999742111 mm³
+2025-02-19 17:55:10,420 - INFO - Final visualization of the Good CSF Mask.
+2025-02-19 17:55:10,420 - INFO - Starting visualization of the Good CSF Mask with PyVista.
+2025-02-19 17:55:10,788 - INFO - Exporting the Good CSF Mask visualization to 'good_cluster_malade.html'.
+2025-02-19 17:55:10,902 - INFO - Visualization successfully saved to 'good_cluster_malade.html'.
+2025-02-19 17:55:10,904 - INFO - Visualization process completed.
+2025-02-19 17:55:10,906 - WARNING - No refined mask found for cluster 0. Skipping.
+2025-02-19 17:55:10,906 - WARNING - No refined mask found for cluster 0. Skipping.
+2025-02-19 17:55:10,906 - WARNING - No refined mask found for cluster 0. Skipping.
+2025-02-19 17:55:10,906 - WARNING - No refined mask found for cluster 0. Skipping.
+2025-02-19 17:55:10,906 - WARNING - No refined mask found for cluster 0. Skipping.
+2025-02-19 17:55:10,906 - WARNING - No refined mask found for cluster 0. Skipping.
+2025-02-19 17:55:10,906 - WARNING - No refined mask found for cluster 0. Skipping.
+2025-02-19 17:55:10,906 - WARNING - No refined mask found for cluster 0. Skipping.
+2025-02-19 17:55:10,906 - WARNING - No refined mask found for cluster 0. Skipping.
+2025-02-19 17:55:10,906 - WARNING - No refined mask found for cluster 0. Skipping.
+2025-02-19 17:55:10,906 - WARNING - No refined mask found for cluster 0. Skipping.
+2025-02-19 17:55:10,906 - WARNING - No refined mask found for cluster 0. Skipping.
+2025-02-19 17:55:10,906 - WARNING - No refined mask found for cluster 0. Skipping.
+2025-02-19 17:55:10,906 - WARNING - No refined mask found for cluster 0. Skipping.
+2025-02-19 17:55:10,906 - WARNING - No refined mask found for cluster 0. Skipping.
+2025-02-19 17:55:10,906 - WARNING - No refined mask found for cluster 0. Skipping.
+2025-02-19 17:55:10,906 - WARNING - No refined mask found for cluster 0. Skipping.
+2025-02-19 17:55:10,906 - WARNING - No refined mask found for cluster 0. Skipping.
+2025-02-19 17:55:10,906 - WARNING - No refined mask found for cluster 0. Skipping.
+2025-02-19 17:55:10,906 - WARNING - No refined mask found for cluster 0. Skipping.
+2025-02-19 17:55:10,906 - WARNING - No refined mask found for cluster 0. Skipping.
+2025-02-19 17:55:10,906 - WARNING - No refined mask found for cluster 0. Skipping.
+2025-02-19 17:55:10,906 - WARNING - No refined mask found for cluster 0. Skipping.
+2025-02-19 17:55:10,906 - WARNING - No refined mask found for cluster 0. Skipping.
+2025-02-19 17:55:10,906 - WARNING - No refined mask found for cluster 0. Skipping.
+2025-02-19 17:55:10,906 - WARNING - No refined mask found for cluster 0. Skipping.
+2025-02-19 17:55:10,906 - WARNING - No refined mask found for cluster 0. Skipping.
+2025-02-19 17:55:10,907 - WARNING - No refined mask found for cluster 0. Skipping.
+2025-02-19 17:55:10,907 - WARNING - No refined mask found for cluster 0. Skipping.
+2025-02-19 17:55:10,907 - WARNING - No refined mask found for cluster 0. Skipping.
+2025-02-19 17:55:10,907 - WARNING - No refined mask found for cluster 0. Skipping.
+2025-02-19 17:55:10,907 - WARNING - No refined mask found for cluster 0. Skipping.
+2025-02-19 17:55:10,907 - WARNING - No refined mask found for cluster 0. Skipping.
+2025-02-19 17:55:10,907 - WARNING - No refined mask found for cluster 0. Skipping.
+2025-02-19 17:55:10,907 - WARNING - No refined mask found for cluster 0. Skipping.
+2025-02-19 17:55:10,907 - WARNING - No refined mask found for cluster 0. Skipping.
+2025-02-19 17:55:10,907 - WARNING - No refined mask found for cluster 0. Skipping.
+2025-02-19 17:55:10,907 - WARNING - No refined mask found for cluster 0. Skipping.
+2025-02-19 17:55:10,907 - WARNING - No refined mask found for cluster 0. Skipping.
+2025-02-19 17:55:10,907 - WARNING - No refined mask found for cluster 0. Skipping.
+2025-02-19 17:55:10,907 - WARNING - No refined mask found for cluster 0. Skipping.
+2025-02-19 17:55:10,907 - WARNING - No refined mask found for cluster 0. Skipping.
+2025-02-19 17:55:10,907 - WARNING - No refined mask found for cluster 0. Skipping.
+2025-02-19 17:55:10,907 - WARNING - No refined mask found for cluster 0. Skipping.
+2025-02-19 17:55:10,907 - WARNING - No refined mask found for cluster 0. Skipping.
+2025-02-19 17:55:10,907 - WARNING - No refined mask found for cluster 0. Skipping.
+2025-02-19 17:55:10,907 - WARNING - No refined mask found for cluster 0. Skipping.
+2025-02-19 17:55:10,907 - WARNING - No refined mask found for cluster 0. Skipping.
+2025-02-19 17:55:10,907 - WARNING - No refined mask found for cluster 0. Skipping.
+2025-02-19 17:55:10,907 - WARNING - No refined mask found for cluster 0. Skipping.
+2025-02-19 17:55:10,907 - INFO - Final cleanup completed.
+2025-02-19 17:55:10,908 - INFO - Current memory usage: 858.60 MB
