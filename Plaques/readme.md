@@ -100,7 +100,7 @@ The `LicensePlateDataset` class uses EMNIST characters to create synthetic licen
 - During training, **tqdm** is used for progress bars and real-time updates of loss and accuracy.
 - Loss and accuracy are logged for each epoch, and training graphs are saved for easy evaluation.
 
-![Training Loss and Accuracy](images/training_loss_accuracy.png)
+![Training Loss and Accuracy](images/training_validation_curves.png)
 
 ## Evaluation
 - The `evaluate.py` script loads the trained model and evaluates it on synthetic and real license plates.
